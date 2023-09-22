@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Lucky Games Review</title>
+
+    <style>
+
+    #page{
+    background-color: rgb(69, 181, 32);
+    border: 1px dashed rgb(233, 226, 11) ;
+    width: 900px;
+    height: 680px;                    /* height is set to match height of all sections */
+    top: 0px;                        /* sets top left corner of page */
+    margin: 0px auto;                /* centers the page in browser window */
+    position: relative;              /* position page relative to browser window */
+}
+
+#header{
+    background-color:lightgreen;
+    border: 3px dashed rgb(233, 226, 11) ;
+    text-align:center;
+    font-family:Comic Sans MS;
+    height:100px;
+
+}
+
+#contentLeft {
+text-align:left;
+float:left;
+width:449px;
+height:520px;
+top:-12px;
+background-color:deeppink;
+font-family:monospace;
+}
+#contentRight {
+text-align:right;
+
+float:left;
+width:449px;
+height:520px;
+top:-12px;
+background-color:deeppink;
+font-family:monospace;
+}
+    </style>
+    </head>
+    <body>
+        <div id="page">
+        <div id="header">
+            <h4>Lucky Games Review </h4>
+        </div>
+
+
+        <div id="mainContent">
+            <div id="contentLeft">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla elit nec lectus vehicula commodo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed gravida eu erat id blandit. Fusce
+                    mauris tellus, dapibus ut tempus in, pellentesque sed dolor. Nam accumsan leo id velit tincidunt, id dignissim urna sodales. Quisque lacinia dolor neque, luctus aliquet risus vehicula non. Sed id euismod odio. Aenean gravida turpis
+                    sapien, a suscipit est mattis sed. Integer sapien dolor, interdum eget arcu in, ornare ultrices quam. Curabitur libero magna, ornare at viverra vitae, mattis nec risus. Aenean in pharetra elit. Suspendisse turpis ex, ullamcorper ut
+                    risus et, tincidunt condimentum neque. Nulla facilisi. </p>
+            </div>
+            <div id="contentRight">
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla elit nec lectus vehicula commodo. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed gravida eu erat id blandit. Fusce
+                    mauris tellus, dapibus ut tempus in, pellentesque sed dolor. Nam accumsan leo id velit tincidunt, id dignissim urna sodales. Quisque lacinia dolor neque, luctus aliquet risus vehicula non. Sed id euismod odio. Aenean gravida turpis
+                    sapien, a suscipit est mattis sed. Integer sapien dolor, interdum eget arcu in, ornare ultrices quam. Curabitur libero magna, ornare at viverra vitae, mattis nec risus. Aenean in pharetra elit. Suspendisse turpis ex, ullamcorper ut
+                    risus et, tincidunt condimentum neque. Nulla facilisi. </p>
+            </div>
+        </div>
+        <div id="footer">
+            <h4> This is the footer. </h4>
+        </div>
+
+    </div>
+
+
+    <form action="/answer" method="POST">
+
+          <p>
+            <input
+                type="radio"
+                name="answer"
+                value="{{ choice }}"
+                aria-label="{{ choice }}">
+            {{ choice }}
+          </p>
+
+
+        <button>Continue</button>
+      </form>
+</body>
+</html>
+
